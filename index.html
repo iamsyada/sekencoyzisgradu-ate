@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Selamat Wisuda 🎓</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- MUSIC -->
+  <audio id="bgm" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <!-- OPENING -->
+  <section class="opening" id="opening">
+
+    <!-- VIDEO -->
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+
+    <!-- FLOWERS -->
+    <div class="flowers">
+      <span>🌸</span>
+      <span>🌷</span>
+      <span>💮</span>
+      <span>🌸</span>
+      <span>🌷</span>
+      <span>💖</span>
+    </div>
+
+
+    <div class="content">
+
+      <h1>
+        Congratulations ✨
+      </h1>
+
+      <p>
+        Selamat atas wisudamu 🎓
+      </p>
+
+      <button id="openBtn">
+        Buka Ucapan
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN -->
+  <section class="main hidden" id="main">
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+
+    <h2 class="title">
+      Selamat Wisuda 💖
+    </h2>
+
+<!-- PHOTO CARDS -->
+    <div class="gallery">
+
+      <div class="card">
+        <img src="images/foto1.jpg">
+      </div>
+
+      <div class="card">
+        <img src="images/foto2.jpg">
+      </div>
+
+      <div class="card">
+        <img src="images/foto3.jpg">
+      </div>
+
+    </div>
+
+
+    <!-- MESSAGE -->
+    <div class="message-box">
+
+      <p id="typing"></p>
+
+    </div>
+
+    <!-- FLOWERS -->
+    <div class="bottom-flowers">
+      🌸 🌷 💖 🌸 🌷
+    </div>
+
+  </section>
+
+
+  <!-- CONFETTI -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
