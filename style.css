@@ -1,4 +1,4 @@
-{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -15,93 +15,140 @@ body{
 
 /* OPENING */
 .opening{
-  height:100vh;
   position:relative;
+  width:100%;
+  height:100vh;
+
+  overflow:hidden;
+
   display:flex;
   justify-content:center;
   align-items:center;
-  overflow:hidden;
 }
 
+
+/* VIDEO */
 .bg-video{
   position:absolute;
   top:0;
   left:0;
+
   width:100%;
   height:100%;
+
   object-fit:cover;
+
   z-index:0;
-  pointer-events:none; !important;
+
+  pointer-events:none !important;
 }
+
+
+/* OVERLAY */
 .overlay{
   position:absolute;
   inset:0;
-  background:rgba(255,192,203,0.25);
+
+  background:rgba(255,192,203,0.35);
+
+  backdrop-filter:blur(3px);
+
   z-index:1;
 }
 
-.content{
+
+/* NOTIF BOX */
+.notif-box{
   position:relative;
+
   z-index:999;
+
+  width:85%;
+  max-width:350px;
+
+  background:rgba(255,255,255,0.85);
+
+  padding:35px;
+
+  border-radius:30px;
+
   text-align:center;
-  padding:20px;
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 10px 40px rgba(255,105,180,0.2);
 }
-.content h1{
+
+.notif-box h1{
   font-family:'Great Vibes',cursive;
-  font-size:5rem;
-  color:white;
-  text-shadow:0 0 20px #ff7eb6;
-}
+  font-size:4rem;
 
-.content p{
-  margin-top:10px;
-  font-size:1.2rem;
-}
-
-button{
-  margin-top:30px;
-  padding:15px 35px;
-  border:none;
-  border-radius:999px;
-  background:white;
   color:#ff4fa1;
+
+  margin-bottom:10px;
+}
+
+.notif-box p{
+  color:#666;
+
+  margin-bottom:25px;
+
   font-size:1rem;
-  font-weight:600;left:25%;
-  animation-delay:2s;
 }
 
-.flowers span:nth-child(3){
-  left:45%;
-  animation-delay:4s;
+.notif-box button{
+  border:none;
+
+  background:#ff4fa1;
+
+  color:white;
+
+  padding:15px 30px;
+
+  border-radius:999px;
+
+  font-size:1rem;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
 }
 
-.flowers span:nth-child(4){
-  left:65%;
-  animation-delay:1s;
+.notif-box button:hover{
+  transform:scale(1.05);
 }
 
-.flowers span:nth-child(5){
-  left:85%;
-  animation-delay:3s;
-}
 
-.flowers span:nth-child(6){
-  left:55%;
-  animation-delay:5s;
-}/* MAIN */
+/* MAIN */
 .main{
   min-height:100vh;
+
   background:linear-gradient(to bottom,#ffd6e8,#fff5fa);
+
   padding:70px 20px;
+
   text-align:center;
+
   position:relative;
+
   overflow:hidden;
 }
 
+.hidden{
+  display:none;
+}
+
+
+/* TITLE */
 .title{
   font-family:'Great Vibes',cursive;
+
   font-size:4rem;
+
   color:#ff4fa1;
+
   margin-bottom:40px;
 }
 
@@ -109,9 +156,14 @@ button{
 /* GLOW */
 .glow{
   position:absolute;
+
   width:300px;
-  height:300px;border-radius:50%;
+  height:300px;
+
+  border-radius:50%;
+
   background:rgba(255,255,255,0.5);
+
   filter:blur(80px);
 }
 
@@ -129,19 +181,30 @@ button{
 /* GALLERY */
 .gallery{
   display:flex;
+
   justify-content:center;
+
   gap:25px;
-  flex-wrap:wrap;margin-top:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:20px;
 }
 
 .card{
   width:240px;
   height:320px;
+
   background:white;
+
   border-radius:25px;
+
   padding:10px;
+
   box-shadow:0 10px 30px rgba(255,105,180,0.2);
+
   transform:rotate(-2deg);
+
   transition:0.3s;
 }
 
@@ -153,9 +216,12 @@ button{
   transform:scale(1.05);
 }
 
-.card img{width:100%;
+.card img{
+  width:100%;
   height:100%;
+
   object-fit:cover;
+
   border-radius:20px;
 }
 
@@ -163,21 +229,31 @@ button{
 /* MESSAGE */
 .message-box{
   max-width:750px;
+
   margin:70px auto;
+
   background:rgba(255,255,255,0.7);
+
   padding:35px;
+
   border-radius:30px;
+
   backdrop-filter:blur(10px);
+
   box-shadow:0 10px 40px rgba(255,105,180,0.15);
 }
 
 #typing{
   color:#ff4fa1;
+
   font-size:1.15rem;
+
   line-height:2;
 }
+
 .bottom-flowers{
   font-size:2rem;
+
   margin-top:20px;
 }
 
@@ -185,8 +261,8 @@ button{
 /* MOBILE */
 @media(max-width:768px){
 
-  .content h1{
-    font-size:3.5rem;
+  .notif-box h1{
+    font-size:3rem;
   }
 
   .title{
@@ -197,43 +273,5 @@ button{
     width:85%;
     height:360px;
   }
-  
-.popup{
-    position:fixed;
-    inset:0;
 
-    background:rgba(0,0,0,0.5);
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    z-index:9999;
-}
-
-.popup-box{
-    background:white;
-    padding:35px;
-    border-radius:30px;
-
-    text-align:center;
-
-    width:85%;
-    max-width:350px;
-
-    box-shadow:0 10px 40px rgba(0,0,0,0.2);
-}
-
-.popup-box h2{
-    color:#ff4fa1;
-    margin-bottom:10px;
-}
-
-.popup-box p{
-    color:#666;
-    margin-bottom:20px;
-}
-
-.hidden{
-    display:none;
 }
