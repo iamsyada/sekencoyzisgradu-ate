@@ -22,7 +22,7 @@ window.addEventListener("load", async () => {
 
         video.muted = true;
 
-        await video.play();
+        video.play();
 
     }catch(err){
 
@@ -46,6 +46,8 @@ document.body.addEventListener("touchstart", async () => {
     try{
 
         await bgm.play();
+
+        video.play();
 
     }catch(err){
 
