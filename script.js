@@ -1,5 +1,3 @@
-const opening = document.getElementById("opening");
-
 const main = document.getElementById("main");
 
 const bgm = document.getElementById("bgm");
@@ -14,19 +12,17 @@ window.addEventListener("load", async () => {
 
     alert("Aku punya sesuatu untuk kamu 🎓");
 
-    alert("Klik untuk membuka surprise ✨");
+    alert("Tap layar untuk membuka surprise ✨");
 
-
-    opening.style.display = "flex";
 
     main.classList.remove("hidden");
 
 
     try{
 
-        await video.play();
+        video.muted = true;
 
-        await bgm.play();
+        await video.play();
 
     }catch(err){
 
@@ -42,3 +38,19 @@ window.addEventListener("load", async () => {
     });
 
 });
+
+
+
+document.addEventListener("click", async () => {
+
+    try{
+
+        await bgm.play();
+
+    }catch(err){
+
+        console.log(err);
+
+    }
+
+}, { once:true });
