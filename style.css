@@ -46,10 +46,13 @@ body{
   filter:none;
 
   opacity:1;
+  
+  will-change:transform;
 
   z-index:0;
 
   pointer-events:none !important;
+ 
 }
 
 
