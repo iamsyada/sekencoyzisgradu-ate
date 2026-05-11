@@ -1,3 +1,5 @@
+const opening = document.getElementById("opening");
+
 const main = document.getElementById("main");
 
 const bgm = document.getElementById("bgm");
@@ -12,8 +14,10 @@ window.addEventListener("load", async () => {
 
     alert("Aku punya sesuatu untuk kamu 🎓");
 
-    alert("Klik OK untuk membuka surprise ✨");
+    alert("Klik untuk membuka surprise ✨");
 
+
+    opening.style.display = "flex";
 
     main.classList.remove("hidden");
 
