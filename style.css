@@ -72,8 +72,6 @@ body{
 
   text-align:center;
 
-  backdrop-filter:blur(10px);
-
   box-shadow:0 10px 40px rgba(255,105,180,0.2);
 }
 
