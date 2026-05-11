@@ -12,6 +12,21 @@ openBtn.addEventListener("click", () => {
 
   bgm.play();
 
+});
+
+
+
+window.addEventListener("load", async () => {
+
+    const video = document.querySelector(".bg-video");
+
+    try{
+        await video.play();
+    }catch(err){
+        console.log("autoplay blocked");
+    }
+
+});
 
   // CONFETTI
   confetti({
