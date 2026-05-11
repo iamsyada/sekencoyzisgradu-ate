@@ -49,7 +49,7 @@ body{
   position:absolute;
   inset:0;
 
-  background:rgba(255,192,203,0.35);
+  background:rgba(255,192,203,0.12);
 
   z-index:1;
 }
