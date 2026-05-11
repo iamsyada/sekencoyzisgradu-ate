@@ -41,13 +41,13 @@ window.addEventListener("load", async () => {
 
 
 
-document.body.addEventListener("touchstart", async () => {
+const startMusic = async () => {
 
     try{
 
         await bgm.play();
 
-        video.play();
+        await video.play();
 
     }catch(err){
 
@@ -55,4 +55,9 @@ document.body.addEventListener("touchstart", async () => {
 
     }
 
-}, { once:true });
+};
+
+
+document.body.addEventListener("touchstart", startMusic, { once:true });
+
+document.body.addEventListener("click", startMusic, { once:true });
