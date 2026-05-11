@@ -31,7 +31,7 @@ body{
   height:100%;
   object-fit:cover;
   z-index:0;
-  pointer-events:none;
+  pointer-events:none; !important;
 }
 .overlay{
   position:absolute;
@@ -42,7 +42,7 @@ body{
 
 .content{
   position:relative;
-  z-index:2;
+  z-index:999;
   text-align:center;
   padding:20px;
 }
