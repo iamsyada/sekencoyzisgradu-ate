@@ -40,9 +40,8 @@ window.addEventListener("load", async () => {
 });
 
 
-document.addEventListener("click", async () => {
 
-    const bgm = document.getElementById("bgm");
+document.body.addEventListener("touchstart", async () => {
 
     try{
 
