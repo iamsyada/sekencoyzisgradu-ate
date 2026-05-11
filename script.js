@@ -1,7 +1,3 @@
-const startBtn = document.getElementById("startBtn");
-
-const opening = document.getElementById("opening");
-
 const main = document.getElementById("main");
 
 const bgm = document.getElementById("bgm");
@@ -10,7 +6,17 @@ const video = document.querySelector(".bg-video");
 
 
 
-startBtn.addEventListener("click", async () => {
+window.addEventListener("load", async () => {
+
+    alert("Haii 💖");
+
+    alert("Aku punya sesuatu untuk kamu 🎓");
+
+    alert("Klik OK untuk membuka surprise ✨");
+
+
+    main.classList.remove("hidden");
+
 
     try{
 
@@ -23,11 +29,6 @@ startBtn.addEventListener("click", async () => {
         console.log(err);
 
     }
-
-
-    opening.style.display = "none";
-
-    main.classList.remove("hidden");
 
 
     confetti({
