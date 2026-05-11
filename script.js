@@ -1,40 +1,54 @@
+const startBtn = document.getElementById("startBtn");
+
+const popup = document.getElementById("popup");
+
 const openBtn = document.getElementById("openBtn");
+
 const opening = document.getElementById("opening");
+
 const main = document.getElementById("main");
+
 const bgm = document.getElementById("bgm");
 
-
-openBtn.addEventListener("click", () => {
-
-  opening.style.display = "none";
-
-  main.classList.remove("hidden");
-
-  bgm.play();
-
-});
+const video = document.querySelector(".bg-video");
 
 
-
-window.addEventListener("load", async () => {
-
-    const video = document.querySelector(".bg-video");
+// STEP 1
+startBtn.addEventListener("click", async () => {
 
     try{
+
         await video.play();
+
+        await bgm.play();
+
     }catch(err){
-        console.log("autoplay blocked");
+
+        console.log("media blocked");
+
     }
+
+    popup.classList.remove("hidden");
 
 });
 
-  // CONFETTI
-  confetti({
-    particleCount:180,
-    spread:120,origin:{ y:0.6 }
-  });
+
+// STEP 2
+openBtn.addEventListener("click", () => {
+
+    opening.style.display = "none";
+
+    main.classList.remove("hidden");
 
 
+
+    confetti({
+        particleCount:150,
+        spread:100,
+        origin:{ y:0.6 }
+    });
+
+});
   setTimeout(() => {
 
     confetti({
