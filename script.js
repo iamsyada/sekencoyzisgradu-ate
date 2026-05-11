@@ -40,8 +40,9 @@ window.addEventListener("load", async () => {
 });
 
 
-
 document.addEventListener("click", async () => {
+
+    const bgm = document.getElementById("bgm");
 
     try{
 
