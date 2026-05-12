@@ -248,10 +248,12 @@ body{
   backdrop-filter:blur(3px);
 
   box-shadow:0 10px 40px rgba(255,105,180,0.15);
+
+  color:#7a4e57;
 }
 
 #typing{
-  color:#7a4e57;
+  color:inherit;
 
   font-size:1.15rem;
 
