@@ -214,6 +214,8 @@ body{
   flex-wrap:wrap;
 
   margin-top:20px;
+  position: relative;
+  z-index: 998;
 }
 
 .card{
@@ -257,7 +259,7 @@ body{
 
   margin:70px auto;
 
-  background:rgba(255,255,255,0.7);
+  background:rgba(255,255,255,0.9);
 
   padding:35px;
 
@@ -270,7 +272,8 @@ body{
   color:#C11C84;
   line-height: 1.6;
   white-space: normal;
-  z-index:10;
+  position: relative;
+  z-index:999;
 }
 
 #typing{
@@ -312,14 +315,16 @@ body{
 }
 
 .flower-scene{
-  position:relative;
+  position:absolute;
 
   display:flex;
   align-items:flex-end;
   justify-content:center;
-
+  top: 0;
+  left: 0;
+  z-index: 5;
   min-height:100vh;
-
+  width: 100%;
   background-color:var(--dark-color);
 
   overflow:hidden;
@@ -340,6 +345,9 @@ body{
 
 .flowers {
   position: relative;
+  display: flex;
+  justify-contect: center;
+  align-items: flex end;
   transform: scale(0.7);
 }
 
