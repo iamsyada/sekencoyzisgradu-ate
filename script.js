@@ -8,11 +8,11 @@ const video = document.querySelector(".bg-video");
 
 window.addEventListener("load", async () => {
 
-    alert("Haii 💖");
+    alert("Halo bub 💖");
 
-    alert("Aku punya sesuatu untuk kamu 🎓");
+    alert("Ciye udah lulus aje nih 🎓");
 
-    alert("Tap layar untuk membuka surprise ✨");
+    alert("Selamatt yep, aku kasih sesuatu deh, jangan nangis yaah 😜");
 
 
     main.classList.remove("hidden");
