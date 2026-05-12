@@ -1,4 +1,4 @@
-const main = document.getElementById("main").classList.remove("hidden');
+const main = document.getElementById("main");
 
 const bgm = document.getElementById("bgm");
 
