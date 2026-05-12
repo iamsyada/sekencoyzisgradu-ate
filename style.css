@@ -311,18 +311,24 @@ body{
   --dark-color: #000;
 }
 
-body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--dark-color);
-  overflow: hidden;
-  perspective: 1000px;
+.flower-scene{
+  position:relative;
+
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+
+  min-height:100vh;
+
+  background-color:var(--dark-color);
+
+  overflow:hidden;
+
+  perspective:1000px;
 }
 
 .night {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
