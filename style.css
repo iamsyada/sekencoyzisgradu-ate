@@ -250,6 +250,8 @@ body{
   box-shadow:0 10px 40px rgba(255,105,180,0.15);
 
   color:#C11C84;
+  line-height: 1.6;
+  white-space: normal;
 }
 
 #typing{
