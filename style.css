@@ -129,16 +129,16 @@ body{
 }
 
 .scroll-hint {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: white;
-  opacity: 0.8;
-  font-family: 'Poppins', sans-serif;
-  animation: float 2s infinite ease-in-out;
-  z.index: 5;
+  position:absolute;
+  bottom:30px;
+  width:100%;
+  text-align:center;
+  font-size:14px;
+  color:white;
+  opacity:0.8;
+  font-family:'Poppins',sans-serif;
+  animation:float 2s infinite ease-in-out;
+  z.index:5;
 }
 
 @keyframes float {
