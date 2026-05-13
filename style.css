@@ -327,8 +327,7 @@ body{
   background-color:var(--dark-color);
 
   overflow:hidden;
-
-  margin-top:50px;
+  display: block;
 }
 
 .night {
@@ -344,15 +343,18 @@ body{
 }
 
 .flowers {
-  position: relative;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%) scale(0,7);
   z-index: 10;
   display: flex;
   justify-contect: center;
   align-items: flex end;
-  transform: scale(0.7);
   width: 100%;
-  height: 100vh;
-  margin: 0 auto;
+  max-width: 600px;
+  height: 500px;
+  pointer-events: none;
 }
 
 .flower {
@@ -360,10 +362,12 @@ body{
   bottom: 10vmin;
   transform-origin: bottom center;
   z-index: 10;
+  left: 50% !important;
   --fl-speed: 0.8s;
 }
 .flower--1 {
   animation: moving-flower-1 4s linear infinite;
+  transform: translateX(-50%);
 }
 .flower--1 .flower__line {
   height: 70vmin;
@@ -389,7 +393,7 @@ body{
 }
 .flower--2 {
   left: 50%;
-  transform: rotate(30deg);
+  transform: translateX(-50%) rotate(20deg); margin-left: 80px;
   animation: moving-flower-2 4s linear infinite;
 }
 .flower--2 .flower__line {
@@ -410,7 +414,7 @@ body{
 }
 .flower--3 {
   left: 50%;
-  transform: rotate(-15deg);
+  transform: translateX(-50%) rotate(-20deg); margin-left: -80px;
   animation: moving-flower-3 4s linear infinite;
 }
 .flower--3 .flower__line {
