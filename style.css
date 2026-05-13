@@ -328,7 +328,7 @@ body{
 
   overflow:hidden;
 
-  margin-top:100px;
+  margin-top:50px;
 }
 
 .night {
@@ -345,13 +345,14 @@ body{
 
 .flowers {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   justify-contect: center;
   align-items: flex end;
-  transform: scale(0.8);
+  transform: scale(0.7);
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .flower {
